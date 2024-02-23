@@ -9,12 +9,6 @@ class TodomeDatabase extends ChangeNotifier {
     init();
   }
 
-  DateTime selectedDate = DateTime.now();
-
-  selectDate(DateTime date) {
-    selectedDate = date;
-  }
-
   late Future<Isar?> db;
 
   List<Task> _tasks = [];
